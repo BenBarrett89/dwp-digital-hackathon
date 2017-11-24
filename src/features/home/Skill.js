@@ -14,7 +14,7 @@ export class Skill extends Component {
 
   render() {
     return (
-      <div className="home-skill">
+      <div className="home-skill upskillDiv">
         <div style={{float: 'left', width:'40%'}}>
           <h1>Pastry making</h1>
         </div>
