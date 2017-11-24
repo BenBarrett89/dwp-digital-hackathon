@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 export default class JobListItem extends Component {
 
@@ -16,7 +17,9 @@ export default class JobListItem extends Component {
         </div>
         <div style={{float: 'left', width: '25%'}}>
           {this.props.skills && this.props.skills.map((skill, index) => {
-            return (<button key={index} href={skill.url}>{skill.name}</button>)
+            return (
+              <Link key={index} to={skill.url}>{skill.name}</Link>
+            )
           }
           )}
         </div>

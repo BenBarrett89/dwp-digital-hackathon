@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as actions from './redux/actions';
+import { Link } from 'react-router-dom';
 
 import RateBox from './RateBox'
 
@@ -21,9 +22,13 @@ export class Rate extends Component {
         <RateBox title='Working in a team' value='5' />
         <RateBox title='Time keeping' value='5' />
         <RateBox title='Working under pressure' value='5' />
-          <div>
-            <button>Next</button>
-          </div>
+        <div>
+          <Link to='/jobs'>
+            <button>
+              Next
+            </button>
+          </Link>
+        </div>
       </div>
     );
   }

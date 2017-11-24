@@ -8,7 +8,7 @@ export default class RateBox extends Component {
           {this.props.title}
         </div>
         <div style={{float: 'left', width: '30%'}}>
-          <input type='range' min='1' max='10' class='slider' />
+          <input type='range' min='1' max='10' defaultValue='5' className='slider' />
         </div>
         <div style={{float: 'left', width: '30%'}}>
           {this.props.value}

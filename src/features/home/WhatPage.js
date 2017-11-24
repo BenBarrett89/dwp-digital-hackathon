@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as actions from './redux/actions';
+import { Link } from 'react-router-dom';
 
 export class WhatPage extends Component {
   static propTypes = {
@@ -16,7 +17,11 @@ export class WhatPage extends Component {
         <h1>What do you want to do?</h1>
         <input id='sector'></input>
           <div>
-            <button>Next</button>
+            <Link to='/rate'>
+              <button>
+                Next
+              </button>
+            </Link>
           </div>
       </div>
     );

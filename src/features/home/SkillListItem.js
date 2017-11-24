@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 export default class JobListItem extends Component {
 
@@ -6,13 +7,15 @@ export default class JobListItem extends Component {
     return (
       <div>
         <div style={{float: 'left', width: '20%'}}>
-          <button href={this.props.url}>{this.props.title}</button>
+          <Link to={this.props.url}>{this.props.title}</Link>
         </div>
         <div style={{float: 'left', width: '55%'}}>
-          Learning <a href={this.props.url}>{this.props.title}</a> will open up {this.props.percentageIncrease}% more jobs in your area!
+          Learning <Link to={this.props.url}>{this.props.title}</Link> will open up {this.props.percentageIncrease}% more jobs in your area!
         </div>
         <div style={{float: 'left', width: '25%'}}>
-          <button>Learn now!</button>
+          <Link to={this.props.url}>
+            <button>Learn now!</button>
+          </Link>
         </div>
         <div style={{clear: 'both'}} />
       </div>

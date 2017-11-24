@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as actions from './redux/actions';
+import { Link } from 'react-router-dom';
 
 export class WherePage extends Component {
   static propTypes = {
@@ -25,7 +26,11 @@ export class WherePage extends Component {
           <label htmlFor='travel'>miles</label>
         </div>
         <div>
-          <button>Next</button>
+          <Link to='/what'>
+            <button>
+              Next
+            </button>
+          </Link>
         </div>
       </div>
     );

@@ -48,19 +48,19 @@ export class Jobs extends Component {
           <h1>Get skills</h1>
             <SkillListItem
               title={'Pastry making'}
-              url={'/'}
+              url={'/skill'}
               percentageIncrease={33}
               />
-              <SkillListItem
-                title={'Leadership'}
-                url={'/'}
-                percentageIncrease={33}
-                />
-                <SkillListItem
-                  title={'Management'}
-                  url={'/'}
-                  percentageIncrease={33}
-                  />
+            <SkillListItem
+              title={'Leadership'}
+              url={'/skill'}
+              percentageIncrease={33}
+              />
+            <SkillListItem
+              title={'Management'}
+              url={'/skill'}
+              percentageIncrease={33}
+              />
         </div>
       </div>
     );
