@@ -8,3 +8,4 @@ export { default as Rate } from './Rate';
 export { default as Career } from './Career';
 export { default as Jobs } from './Jobs';
 export { default as Skill } from './Skill';
+export { default as Experience } from './Experience';

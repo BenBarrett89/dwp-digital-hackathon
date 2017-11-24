@@ -6,8 +6,9 @@ import {
   Rate,
   Career,
   Jobs,
-  Skill
-} from './'
+  Skill,
+  Experience,
+} from './';
 
 export default {
   path: '/',
@@ -18,6 +19,7 @@ export default {
     { path: 'rate', name: 'Rate', component: Rate },
     { path: 'jobs', name: 'Jobs', component: Jobs },
     { path: 'skill', name: 'Skill', component: Skill },
-    { path: 'career', name: 'Career', component: Career }
+    { path: 'career', name: 'Career', component: Career },
+    { path: 'experience', name: 'Experience', component: Experience }
   ]
 }

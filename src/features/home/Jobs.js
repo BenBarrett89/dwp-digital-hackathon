@@ -68,12 +68,12 @@ export class Jobs extends Component {
             <h1>Get experience</h1>
               <ExperienceListItem
                 title={'Shadowing chefs'}
-                url={'/skill'}
+                url={'/experience'}
                 percentageIncrease={50}
                 />
               <ExperienceListItem
                 title={'Washing dishes'}
-                url={'/skill'}
+                url={'/experience'}
                 percentageIncrease={5}
                 />
           </div>

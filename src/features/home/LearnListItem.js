@@ -21,7 +21,7 @@ export default class LearnListItem extends Component {
           </div>
         )}
         <div style={{float: 'left', width: '25%'}}>
-          {this.props.duration} long
+          {this.props.duration}
         </div>
         <div style={{float: 'left', width: '5%'}}>
           <button href={this.props.url}>Enrol</button>
