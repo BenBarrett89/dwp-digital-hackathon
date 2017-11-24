@@ -24,21 +24,32 @@ export class Skill extends Component {
         <div style={{clear: 'both'}} />
         <hr />
         <div className='skills-table'>
-          <LearnListItem
-            title='Pâtissier 101'
-            description='Back to basics for Pâtissiering'
-            url='/'
-            online={false}
-            distance={2}
-            duration={'4 days'}
-            />
-          <LearnListItem
-            title='Learn to Pâtissier in 24 hours'
-            description='Pâtissier training from your own home!'
-            url='/'
-            online={true}
-            duration={'24 hours'}
-            />
+          <table>
+            <thead>
+              <th>Course</th>
+              <th>Description</th>
+              <th>Distance</th>
+              <th>Duration</th>
+              <th>Enrol</th>
+            </thead>
+            <tbody>
+              <LearnListItem
+                title='Pâtissier 101'
+                description='Back to basics for Pâtissiering'
+                url='/'
+                online={false}
+                distance={2}
+                duration={'4 days'}
+                />
+              <LearnListItem
+                title='Learn to Pâtissier in 24 hours'
+                description='Pâtissier training from your own home!'
+                url='/'
+                online={true}
+                duration={'24 hours'}
+                />
+            </tbody>
+          </table>
         </div>
       </div>
     );
