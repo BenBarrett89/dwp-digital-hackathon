@@ -17,7 +17,7 @@ export class Jobs extends Component {
     return (
       <div className="home-jobs">
         <div className='today'>
-          <h1>Jobs in tour area you can apply for today</h1>
+          <h1>Jobs in your area you can apply for today</h1>
             <JobListItem
               percentageMatch={100}
               title={'Chef'}
