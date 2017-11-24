@@ -6,6 +6,7 @@ import * as actions from './redux/actions';
 
 import JobListItem from './JobListItem'
 import SkillListItem from './SkillListItem'
+import ExperienceListItem from './ExperienceListItem'
 
 export class Jobs extends Component {
   static propTypes = {
@@ -44,24 +45,38 @@ export class Jobs extends Component {
               />
         </div>
         <hr />
-        <div className='skillsForJobs'>
-          <h1>Get skills</h1>
-            <SkillListItem
-              title={'Pastry making'}
-              url={'/skill'}
-              percentageIncrease={33}
-              />
-            <SkillListItem
-              title={'Leadership'}
-              url={'/skill'}
-              percentageIncrease={33}
-              />
-            <SkillListItem
-              title={'Management'}
-              url={'/skill'}
-              percentageIncrease={33}
-              />
-        </div>
+          <div className='skillsForJobs'>
+            <h1>Get skills</h1>
+              <SkillListItem
+                title={'Pastry making'}
+                url={'/skill'}
+                percentageIncrease={33}
+                />
+              <SkillListItem
+                title={'Leadership'}
+                url={'/skill'}
+                percentageIncrease={33}
+                />
+              <SkillListItem
+                title={'Management'}
+                url={'/skill'}
+                percentageIncrease={33}
+                />
+          </div>
+          <hr />
+          <div className='jobExperience'>
+            <h1>Get experience</h1>
+              <ExperienceListItem
+                title={'Shadowing chefs'}
+                url={'/skill'}
+                percentageIncrease={50}
+                />
+              <ExperienceListItem
+                title={'Washing dishes'}
+                url={'/skill'}
+                percentageIncrease={5}
+                />
+          </div>
       </div>
     );
   }
