@@ -24,14 +24,24 @@ export class Experience extends Component {
         <div style={{clear: 'both'}} />
         <hr />
         <div className='skills-table'>
-          <LearnListItem
-            title='Restaurant X'
-            description='Restaurant X are offering for chefs in training to shadow some of their chefs'
-            url='/'
-            online={false}
-            distance={4.6}
-            duration={'1 day a week'}
-            />
+          <table>
+            <thead>
+              <th>Location</th>
+              <th>Description</th>
+              <th>Distance</th>
+              <th>Enrol</th>
+            </thead>
+            <tbody>
+              <LearnListItem
+                title='Restaurant X'
+                description='Restaurant X are offering for chefs in training to shadow some of their chefs'
+                url='/'
+                online={false}
+                distance={4.6}
+                duration={'1 day a week'}
+                />
+            </tbody>
+          </table>
         </div>
       </div>
     );
