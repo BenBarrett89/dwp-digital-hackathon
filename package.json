@@ -67,7 +67,7 @@
     "build": "node ./tools/build.js",
     "postfetch": "bash server/database/scripts/dump.sh && bash scripts/dbImport.sh",
     "restore-db": "bash server/database/scripts/dbImport.sh && npm run test-dbSetup",
-    "test": "node ./tools/run_test.js",
+    "test": "node ./tools/run_test.js"
   },
   "devDependencies": {
     "argparse": "^1.0.7",
