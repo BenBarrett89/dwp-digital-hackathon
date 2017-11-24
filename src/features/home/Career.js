@@ -22,20 +22,32 @@ export class Career extends Component {
         <h1>Have you thought about a change in career?</h1>
         <p>Changing your career may benefit you; the skills you already have are transferrable.</p>
         <p>The following career change may be a good match for you:</p>
-        <CareerListItem
-          title={'Hospitality'}
-          description={'The hospitality industry is a broad category of fields within service industry that includes lodging, event planning, theme parks, transportation, cruise line, and additional fields within the tourism industry.'}
-          percentageMatch={75}
-          jobs={6}
-          url={'/rate'}
-          />
-          <CareerListItem
-            title={'Airline'}
-            description={'An airline is a company that provides air transport services for traveling passengers and freight. Airlines utilize aircraft to supply these services and may form partnerships or alliances with other airlines for codeshare agreements.'}
-            percentageMatch={65}
-            jobs={3}
-            url={'/rate'}
-            />
+        <table>
+          <thead>
+            <th>Industry</th>
+            <th>Skills</th>
+            <th>Jobs</th>
+            <th>Description</th>
+            <th>Try</th>
+          </thead>
+          <tbody>
+            <CareerListItem
+              title={'Hospitality'}
+              description={'The hospitality industry is a broad category of fields within service industry that includes lodging, event planning, theme parks, transportation, cruise line, and additional fields within the tourism industry.'}
+              percentageMatch={75}
+              jobs={6}
+              url={'/rate'}
+              />
+              <CareerListItem
+                title={'Airline'}
+                description={'An airline is a company that provides air transport services for traveling passengers and freight. Airlines utilize aircraft to supply these services and may form partnerships or alliances with other airlines for codeshare agreements.'}
+                percentageMatch={65}
+                jobs={3}
+                url={'/rate'}
+                />
+          </tbody>
+        </table>
+
       </div>
     );
   }
