@@ -18,6 +18,7 @@ export class WherePage extends Component {
           <label htmlFor='postcode'>Postcode:</label>
           <input id='postcode'></input>
         </div>
+        <hr />
         <div>
           <h1>How far can you travel?</h1>
           <input type='number' id='travel'></input>

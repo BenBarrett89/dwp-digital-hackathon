@@ -4,6 +4,8 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as actions from './redux/actions';
 
+import CareerListItem from './CareerListItem'
+
 export class Career extends Component {
   static propTypes = {
     home: PropTypes.object.isRequired,
@@ -13,7 +15,27 @@ export class Career extends Component {
   render() {
     return (
       <div className="home-career">
-        Page Content: home/Career
+        <h1>Sorry, no jobs found</h1>
+        <p>Sorry, we couldn't find any jobs in your provided sector in your area.</p>
+        <p>You can try widening your distance to see if there are jobs further away from you in your chosen sector.</p>
+        <hr />
+        <h1>Have you thought about a change in career?</h1>
+        <p>Changing your career may benefit you; the skills you already have are transferrable.</p>
+        <p>The following career change may be a good match for you:</p>
+        <CareerListItem
+          title={'Hospitality'}
+          description={'The hospitality industry is a broad category of fields within service industry that includes lodging, event planning, theme parks, transportation, cruise line, and additional fields within the tourism industry.'}
+          percentageMatch={75}
+          jobs={6}
+          url={'/'}
+          />
+          <CareerListItem
+            title={'Airline'}
+            description={'An airline is a company that provides air transport services for traveling passengers and freight. Airlines utilize aircraft to supply these services and may form partnerships or alliances with other airlines for codeshare agreements.'}
+            percentageMatch={65}
+            jobs={3}
+            url={'/'}
+            />
       </div>
     );
   }

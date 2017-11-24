@@ -25,6 +25,7 @@ export class Jobs extends Component {
               url={'/'}
               />
         </div>
+        <hr />
         <div className='jobSkills'>
           <h1>Jobs in your area you can apply for with some training</h1>
             <JobListItem
@@ -42,6 +43,7 @@ export class Jobs extends Component {
               skills={[{name: 'Leadership', url: '/'},{name: 'Management', url: '/'}]}
               />
         </div>
+        <hr />
         <div className='skillsForJobs'>
           <h1>Get skills</h1>
             <SkillListItem
