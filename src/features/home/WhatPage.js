@@ -13,7 +13,7 @@ export class WhatPage extends Component {
 
   render() {
     return (
-      <div className="home-what-page">
+      <div className="home-what-page upskillDiv">
         <h1>What do you want to do?</h1>
         <input id='sector'></input>
           <div>

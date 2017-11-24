@@ -14,13 +14,13 @@ export class WherePage extends Component {
   render() {
     return (
       <div className="home-where-page">
-        <div>
+        <div className='upskillDiv'>
           <h1>Where do you live?</h1>
           <label htmlFor='postcode'>Postcode:</label>
           <input id='postcode'></input>
         </div>
         <hr />
-        <div>
+        <div className='upskillDiv'>
           <h1>How far can you travel?</h1>
           <input type='number' id='travel'></input>
           <label htmlFor='travel'>miles</label>
