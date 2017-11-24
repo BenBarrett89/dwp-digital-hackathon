@@ -5,11 +5,11 @@ export default class CareerListItem extends Component {
 
   render () {
     return (
-      <div>
+      <div className='careerListItems'>
         <div style={{float: 'left', width: '10%'}}>
           {this.props.title}
         </div>
-        <div style={{float: 'left', width: '20%'}}>
+        <div className='listHighlight' style={{float: 'left', width: '20%'}}>
           {this.props.percentageMatch}% of skills already
         </div>
         <div style={{float: 'left', width: '15%'}}>

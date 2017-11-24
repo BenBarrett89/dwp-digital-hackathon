@@ -14,7 +14,7 @@ export class Career extends Component {
 
   render() {
     return (
-      <div className="home-career">
+      <div className="home-career upskillDiv">
         <h1>Sorry, no jobs found</h1>
         <p>Sorry, we couldn't find any jobs in your provided sector in your area.</p>
         <p>You can try widening your distance to see if there are jobs further away from you in your chosen sector.</p>
