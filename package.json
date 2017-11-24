@@ -127,5 +127,8 @@
     "webpack-dev-middleware": "^1.10.2",
     "webpack-hot-middleware": "^2.18.0",
     "webpack-node-externals": "^1.6.0"
+  },
+  "dependencies": {
+    "react-bootstrap": "^0.31.5"
   }
 }

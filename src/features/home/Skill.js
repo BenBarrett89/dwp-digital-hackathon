@@ -13,7 +13,13 @@ export class Skill extends Component {
   render() {
     return (
       <div className="home-skill">
-        Page Content: home/Skill
+        <div style={{float: 'left', width:'40%'}}>
+          <h1>Pastry making</h1>
+        </div>
+        <div style={{float: 'right', width:'60%'}}>
+          <p>Pastry making is the art of making a pastry. It is a skill required for pastry chefs or pâtissiers.</p>
+        </div>
+<div style={{clear: 'both'}} />
       </div>
     );
   }
