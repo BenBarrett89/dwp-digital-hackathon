@@ -1,5 +1,18 @@
 @import '../../styles/mixins.scss';
 
 .home-jobs {
+  .job-area {
+    margin: $margin;
+    padding: $padding;
+  }
 
+  .job-quarter {
+    padding: $padding/2;
+    width: 25%;
+  }
+
+  .job-title {
+    padding: $padding/2;
+    text-align: center;
+  }
 }

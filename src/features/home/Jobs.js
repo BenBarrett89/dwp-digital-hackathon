@@ -17,65 +17,109 @@ export class Jobs extends Component {
   render() {
     return (
       <div className="home-jobs">
-        <div className='today'>
-          <h1>Jobs in your area you can apply for today</h1>
-            <JobListItem
-              percentageMatch={100}
-              title={'Chef'}
-              distance={5.4}
-              url={'/'}
-              />
+        <div className='job-area'>
+          <h1 className='job-title'>Jobs in your area you can apply for today</h1>
+            <table>
+              <thead>
+                <tr>
+                  <th className='job-quarter'>Match</th>
+                  <th className='job-quarter'>Job Title</th>
+                  <th className='job-quarter'>Distance</th>
+                  <th className='job-quarter'>Enrol</th>
+                </tr>
+              </thead>
+              <tbody>
+                <JobListItem
+                  percentageMatch={85}
+                  title={'Chef'}
+                  distance={5.4}
+                  url={'/'}
+                  skills={[{name: 'Enrol', url: '/'}]}
+                  />
+                <tr></tr>
+              </tbody>
+            </table>
         </div>
         <hr />
-        <div className='jobSkills'>
-          <h1>Jobs in your area you can apply for with some training</h1>
-            <JobListItem
-              percentageMatch={85}
-              title={'Pastry Chef'}
-              distance={3.4}
-              url={'/'}
-              skills={[{name: 'Pastry making', url: '/skill'}]}
-              />
-            <JobListItem
-              percentageMatch={77}
-              title={'Head Chef'}
-              distance={8.2}
-              url={'/'}
-              skills={[{name: 'Leadership', url: '/skill'},{name: 'Management', url: '/skill'}]}
-              />
+        <div className='job-area'>
+          <h1 className='job-title'>Jobs in your area you can apply for with some training</h1>
+          <table>
+            <thead>
+              <tr>
+                <th>Match</th>
+                <th>Job Title</th>
+                <th>Distance</th>
+                <th>Skills</th>
+              </tr>
+            </thead>
+            <tbody>
+              <JobListItem
+                percentageMatch={85}
+                title={'Pastry Chef'}
+                distance={3.4}
+                url={'/'}
+                skills={[{name: 'Pastry making', url: '/skill'}]}
+                />
+              <JobListItem
+                percentageMatch={77}
+                title={'Head Chef'}
+                distance={8.2}
+                url={'/'}
+                skills={[{name: 'Leadership', url: '/skill'},{name: 'Management', url: '/skill'}]}
+                />
+            </tbody>
+          </table>
         </div>
         <hr />
-          <div className='skillsForJobs'>
-            <h1>Get skills</h1>
-              <SkillListItem
-                title={'Pastry making'}
-                url={'/skill'}
-                percentageIncrease={33}
-                />
-              <SkillListItem
-                title={'Leadership'}
-                url={'/skill'}
-                percentageIncrease={33}
-                />
-              <SkillListItem
-                title={'Management'}
-                url={'/skill'}
-                percentageIncrease={33}
-                />
+          <div className='job-area'>
+            <h1 className='job-title'>Get skills</h1>
+            <table>
+              <thead>
+                <th>Skill</th>
+                <th>Description</th>
+                <th>Learn</th>
+              </thead>
+              <tbody>
+                <SkillListItem
+                  title={'Pastry making'}
+                  url={'/skill'}
+                  percentageIncrease={33}
+                  />
+                <SkillListItem
+                  title={'Leadership'}
+                  url={'/skill'}
+                  percentageIncrease={33}
+                  />
+                <SkillListItem
+                  title={'Management'}
+                  url={'/skill'}
+                  percentageIncrease={33}
+                  />
+              </tbody>
+            </table>
           </div>
           <hr />
-          <div className='jobExperience'>
-            <h1>Get experience</h1>
-              <ExperienceListItem
-                title={'Shadowing chefs'}
-                url={'/experience'}
-                percentageIncrease={50}
-                />
-              <ExperienceListItem
-                title={'Washing dishes'}
-                url={'/experience'}
-                percentageIncrease={5}
-                />
+          <div className='job-area'>
+            <h1 className='job-title'>Get experience</h1>
+              <table>
+                <thead>
+                  <th>Experience</th>
+                  <th>Benefit</th>
+                  <th>Apply</th>
+                </thead>
+                <tbody>
+                  <ExperienceListItem
+                    title={'Shadowing chefs'}
+                    url={'/experience'}
+                    percentageIncrease={50}
+                    />
+                  <ExperienceListItem
+                    title={'Washing dishes'}
+                    url={'/experience'}
+                    percentageIncrease={5}
+                    />
+                </tbody>
+              </table>
           </div>
       </div>
     );

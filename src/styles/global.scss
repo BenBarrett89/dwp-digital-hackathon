@@ -47,3 +47,16 @@ h6 {
   font-size: 14px;
   font-weight: bold;
 }
+
+th {
+  font-weight: bold;
+  padding: $padding/2;
+}
+
+td {
+  text-align: center;
+}
+
+table {
+  padding: $padding/2;
+}
