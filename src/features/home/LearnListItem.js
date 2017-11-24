@@ -3,31 +3,30 @@ import React, { Component } from 'react'
 export default class LearnListItem extends Component {
   render () {
     return (
-      <div>
-        <div style={{float: 'left', width: '20%'}}>
+      <tr>
+        <td style={{width: '20%'}}>
           {this.props.title}
-        </div>
-        <div style={{float: 'left', width: '25%'}}>
+        </td>
+        <td style={{width: '25%'}}>
           {this.props.description}
-        </div>
+        </td>
         {this.props.distance && (
-          <div style={{float: 'left', width: '25%'}}>
+          <td style={{width: '25%'}}>
             {this.props.distance} miles away
-          </div>
+          </td>
         )}
         {this.props.online && (
-          <div style={{float: 'left', width: '25%'}}>
+          <td style={{width: '25%'}}>
             Online course
-          </div>
+          </td>
         )}
-        <div style={{float: 'left', width: '25%'}}>
+        <td style={{width: '25%'}}>
           {this.props.duration}
-        </div>
-        <div style={{float: 'left', width: '5%'}}>
+        </td>
+        <td style={{width: '5%'}}>
           <button href={this.props.url}>Enrol</button>
-        </div>
-        <div style={{clear: 'both'}} />
-      </div>
+        </td>
+      </tr>
     )
   }
 }
