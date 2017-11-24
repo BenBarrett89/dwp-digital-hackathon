@@ -11,7 +11,7 @@
   "skillz": [
     {
       "skillname": "",
-      "level": 1,
+      "level": "",
     },
     ...
   ] 
@@ -39,7 +39,7 @@
   "skillz": [
     {
       "skillname": "",
-      "level": 1,
+      "level": "",
     },
     ...
   ] 
@@ -57,7 +57,7 @@
     "provider": "",
     "location": "",
     "date": "",
-    "ranking": "",
+    "rating": 1,
     ...
 }
 
