@@ -17,3 +17,15 @@
   ] 
 }
 ```
+
+### Skillz Schema
+
+```json
+[
+  {
+    "skillName": ""
+  },
+  ...
+ ]  
+
+```
