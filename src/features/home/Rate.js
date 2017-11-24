@@ -24,7 +24,7 @@ export class Rate extends Component {
         <RateBox title='Working under pressure' value='5' />
         <div>
           <Link to='/jobs'>
-            <button>
+            <button className='btn'>
               Next
             </button>
           </Link>

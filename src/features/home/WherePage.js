@@ -13,7 +13,7 @@ export class WherePage extends Component {
 
   render() {
     return (
-      <div className="home-where-page">
+      <div className="home-where-page upskillDiv">
         <div className='upskillDiv'>
           <h1>Where do you live?</h1>
           <label htmlFor='postcode'>Postcode:</label>
@@ -27,7 +27,7 @@ export class WherePage extends Component {
         </div>
         <div>
           <Link to='/what'>
-            <button>
+            <button className='btn'>
               Next
             </button>
           </Link>

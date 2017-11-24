@@ -18,7 +18,7 @@ export class WhatPage extends Component {
         <input id='sector'></input>
           <div>
             <Link to='/rate'>
-              <button>
+              <button className='btn'>
                 Next
               </button>
             </Link>
