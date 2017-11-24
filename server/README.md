@@ -29,3 +29,36 @@
  ]  
 
 ```
+
+### Job_Skillz Schema
+
+```json
+{
+  "sector": "",
+  "job": "",
+  "skillz": [
+    {
+      "skillname": "",
+      "level": 1,
+    },
+    ...
+  ] 
+}
+
+```
+
+
+### Resource Schema
+
+```json
+{
+    "skillname": "",
+    "level": 1,
+    "provider": "",
+    "location": "",
+    "date": "",
+    "ranking": "",
+    ...
+}
+
+```
