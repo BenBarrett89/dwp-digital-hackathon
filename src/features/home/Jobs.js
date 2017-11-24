@@ -33,14 +33,14 @@ export class Jobs extends Component {
               title={'Pastry Chef'}
               distance={3.4}
               url={'/'}
-              skills={[{name: 'Pastry making', url: '/'}]}
+              skills={[{name: 'Pastry making', url: '/skill'}]}
               />
             <JobListItem
               percentageMatch={77}
               title={'Head Chef'}
               distance={8.2}
               url={'/'}
-              skills={[{name: 'Leadership', url: '/'},{name: 'Management', url: '/'}]}
+              skills={[{name: 'Leadership', url: '/skill'},{name: 'Management', url: '/skill'}]}
               />
         </div>
         <hr />

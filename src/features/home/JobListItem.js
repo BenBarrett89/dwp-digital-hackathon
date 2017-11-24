@@ -18,7 +18,9 @@ export default class JobListItem extends Component {
         <div style={{float: 'left', width: '25%'}}>
           {this.props.skills && this.props.skills.map((skill, index) => {
             return (
-              <Link key={index} to={skill.url}>{skill.name}</Link>
+              <Link key={index} to={skill.url}>
+                <button>{skill.name}</button>
+              </Link>
             )
           }
           )}

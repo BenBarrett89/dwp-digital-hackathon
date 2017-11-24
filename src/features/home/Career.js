@@ -27,14 +27,14 @@ export class Career extends Component {
           description={'The hospitality industry is a broad category of fields within service industry that includes lodging, event planning, theme parks, transportation, cruise line, and additional fields within the tourism industry.'}
           percentageMatch={75}
           jobs={6}
-          url={'/'}
+          url={'/rate'}
           />
           <CareerListItem
             title={'Airline'}
             description={'An airline is a company that provides air transport services for traveling passengers and freight. Airlines utilize aircraft to supply these services and may form partnerships or alliances with other airlines for codeshare agreements.'}
             percentageMatch={65}
             jobs={3}
-            url={'/'}
+            url={'/rate'}
             />
       </div>
     );

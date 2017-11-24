@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 export default class CareerListItem extends Component {
 
@@ -18,7 +19,9 @@ export default class CareerListItem extends Component {
           <p>{this.props.description}</p>
         </div>
         <div style={{float: 'left', width: '15%'}}>
-          <button href={this.props.url}>Try career</button>
+          <Link to={this.props.url}>
+            <button>Try career</button>
+          </Link>
         </div>
         <div style={{clear: 'both'}} />
       </div>
