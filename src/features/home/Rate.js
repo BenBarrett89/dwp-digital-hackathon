@@ -15,7 +15,7 @@ export class Rate extends Component {
 
   render() {
     return (
-      <div className="home-rate">
+      <div className="home-rate upskillDiv">
         <h1>How good are you at these skills?</h1>
         <RateBox title='Food hygiene' value='5' />
         <RateBox title='Communication' value='5' />

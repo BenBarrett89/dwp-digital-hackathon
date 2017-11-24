@@ -47,3 +47,14 @@ h6 {
   font-size: 14px;
   font-weight: bold;
 }
+
+.upskillDiv {
+  border: 2px solid $primary-color-light;
+  border-radius: 5px;
+  padding: 12px;
+  text-align: center;
+
+  h1 {
+    margin-bottom: 1.5rem;
+  }
+}
