@@ -14,7 +14,7 @@ export class Experience extends Component {
 
   render() {
     return (
-      <div className="home-experience">
+      <div className="home-experience upskillDiv">
         <div style={{float: 'left', width:'40%'}}>
           <h1>Shadowing Chefs</h1>
         </div>

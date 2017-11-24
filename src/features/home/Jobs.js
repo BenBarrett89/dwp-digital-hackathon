@@ -16,7 +16,7 @@ export class Jobs extends Component {
 
   render() {
     return (
-      <div className="home-jobs">
+      <div className="home-jobs upskillDiv">
         <div className='job-area'>
           <h1 className='job-title'>Jobs in your area you can apply for today</h1>
             <table>
